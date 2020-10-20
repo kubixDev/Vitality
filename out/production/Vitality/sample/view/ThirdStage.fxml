@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.251" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.ThirdStageController">
+    <children>
+        <AnchorPane layoutY="-52.0" prefHeight="170.0" prefWidth="1280.0" styleClass="anchorPane" stylesheets="@../../stylesheets/style.css">
+            <children>
+                <Label layoutX="53.0" layoutY="85.0" text="Wsparcie emocjonalne" textFill="WHITESMOKE">
+                    <font>
+                        <Font name="Segoe UI Bold" size="48.0" />
+                    </font>
+                </Label>
+                <Button fx:id="buttonBack" layoutX="1048.0" layoutY="89.0" mnemonicParsing="false" onAction="#backClicked" prefHeight="50.0" prefWidth="162.0" styleClass="buttonWhite" stylesheets="@../../stylesheets/style.css" text="wstecz">
+                    <font>
+                        <Font name="Segoe UI" size="25.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+        <Circle layoutX="14.0" layoutY="691.0" opacity="0.2" radius="179.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+            <fill>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop color="#11998e" />
+                        <Stop color="#38ef7d" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </fill>
+        </Circle>
+        <Label alignment="CENTER" layoutX="470.0" layoutY="267.0" prefHeight="48.0" prefWidth="383.0" text="Jak się dziś czujesz?">
+            <font>
+                <Font name="Segoe UI Bold" size="40.0" />
+            </font>
+        </Label>
+        <Line endX="341.99993896484375" fill="BLACK" layoutX="473.0" layoutY="328.0" startX="25.73333740234375" stroke="#11998e" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Button fx:id="buttonWell" layoutX="440.0" layoutY="360.0" mnemonicParsing="false" onAction="#wellClicked" prefHeight="200.0" prefWidth="200.0" styleClass="mainButton" stylesheets="@../../stylesheets/style.css" text="Szczęśliwie">
+         <font>
+            <Font name="Segoe UI" size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonUnwell" layoutX="662.0" layoutY="360.0" mnemonicParsing="false" onAction="#unwellClicked" prefHeight="200.0" prefWidth="200.0" styleClass="mainButton" stylesheets="@../../stylesheets/style.css" text="Przykro">
+         <font>
+            <Font name="Segoe UI" size="30.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

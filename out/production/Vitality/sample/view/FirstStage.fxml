@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.251" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.FirstStageController">
+   <children>
+      <AnchorPane layoutY="-52.0" prefHeight="170.0" prefWidth="1280.0" styleClass="anchorPane" stylesheets="@../../stylesheets/style.css">
+         <children>
+            <Label layoutX="53.0" layoutY="85.0" text="Centrum informacji" textFill="WHITESMOKE">
+               <font>
+                  <Font name="Segoe UI Bold" size="48.0" />
+               </font>
+            </Label>
+            <Button fx:id="buttonBack" layoutX="1048.0" layoutY="89.0" mnemonicParsing="false" onAction="#backClicked" prefHeight="50.0" prefWidth="162.0" styleClass="buttonWhite" stylesheets="@../../stylesheets/style.css" text="wstecz">
+               <font>
+                  <Font name="Segoe UI" size="25.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Circle layoutX="14.0" layoutY="691.0" opacity="0.2" radius="179.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#11998e" />
+                  <Stop color="#38ef7d" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Circle>
+      <Label alignment="BOTTOM_LEFT" layoutX="63.0" layoutY="163.0" prefHeight="43.0" prefWidth="410.0" text="Wyszukaj stację Sanepid">
+         <font>
+            <Font name="Segoe UI Bold" size="35.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textField" layoutX="63.0" layoutY="269.0" prefHeight="50.0" prefWidth="498.0" styleClass="textField" stylesheets="@../../stylesheets/style.css">
+         <font>
+            <Font name="Segoe UI" size="24.0" />
+         </font>
+      </TextField>
+      <Button fx:id="buttonFind" layoutX="436.0" layoutY="269.0" mnemonicParsing="false" onAction="#findClicked" prefHeight="50.0" prefWidth="125.0" styleClass="mainButton" stylesheets="@../../stylesheets/style.css" text="szukaj">
+         <font>
+            <Font name="Segoe UI" size="24.0" />
+         </font>
+      </Button>
+      <Label alignment="BOTTOM_LEFT" layoutX="75.0" layoutY="388.0" prefHeight="38.0" prefWidth="386.0" text="Najbliższa główna stacja">
+         <font>
+            <Font name="Segoe UI Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_LEFT" layoutX="75.0" layoutY="553.0" prefHeight="34.0" prefWidth="339.0" text="Kontakt telefoniczny">
+         <font>
+            <Font name="Segoe UI Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="mainInstitution" layoutX="75.0" layoutY="439.0" prefHeight="50.0" prefWidth="583.0">
+         <font>
+            <Font name="Segoe UI" size="24.0" />
+         </font>
+         <opaqueInsets>
+            <Insets left="50.0" />
+         </opaqueInsets>
+      </Label>
+      <Label fx:id="mainPhoneNumber" layoutX="75.0" layoutY="604.0" prefHeight="50.0" prefWidth="584.0" styleClass="textField">
+         <font>
+            <Font name="Segoe UI" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_LEFT" layoutX="63.0" layoutY="206.0" prefHeight="43.0" prefWidth="454.0" text="dla twojego województwa">
+         <font>
+            <Font name="Segoe UI Bold" size="35.0" />
+         </font>
+      </Label>
+      <Line endX="482.199951171875" endY="0.399993896484375" fill="BLACK" layoutX="176.0" layoutY="489.0" startX="-100.0" stroke="#11998e" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <Line endX="483.0" endY="0.39996337890625" fill="BLACK" layoutX="176.0" layoutY="654.0" startX="-100.0" stroke="#11998e" strokeLineCap="ROUND" strokeWidth="2.0" />
+      <AnchorPane layoutX="741.0" layoutY="163.0" opacity="0.8" prefHeight="262.0" prefWidth="454.0" styleClass="anchorPane" stylesheets="@../../stylesheets/style.css">
+         <children>
+            <Label layoutX="35.0" layoutY="30.0" text="Odpowiednia profilaktyka" textFill="WHITESMOKE">
+               <font>
+                  <Font name="Segoe UI Bold" size="30.0" />
+               </font>
+            </Label>
+            <GridPane layoutX="59.0" layoutY="81.0" prefHeight="162.0" prefWidth="430.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="210.20001220703125" minWidth="10.0" prefWidth="18.4" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="412.0" minWidth="10.0" prefWidth="412.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label prefHeight="40.0" prefWidth="412.0" text="unikaj dotykania twarzy" textFill="WHITESMOKE" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Segoe UI" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="40.0" prefWidth="439.0" text="załóż maseczkę" textFill="WHITESMOKE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Segoe UI" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="40.0" prefWidth="439.0" text="pamiętaj o częstym myciu rąk" textFill="WHITESMOKE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Segoe UI" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="40.0" prefWidth="439.0" text="używaj środków dezynfekcyjnych" textFill="WHITESMOKE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Segoe UI" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="40.0" prefWidth="439.0" text="unikaj dużych skupisk ludzi" textFill="WHITESMOKE" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Segoe UI" size="23.0" />
+                     </font>
+                  </Label>
+                  <Circle fill="WHITESMOKE" radius="5.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" />
+                  <Circle fill="WHITESMOKE" radius="5.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" GridPane.rowIndex="1" />
+                  <Circle fill="WHITESMOKE" radius="5.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" GridPane.rowIndex="4" />
+                  <Circle fill="WHITESMOKE" radius="5.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" GridPane.rowIndex="3" />
+                  <Circle fill="WHITESMOKE" radius="5.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="740.0" layoutY="464.0" opacity="0.8" prefHeight="214.0" prefWidth="490.0" styleClass="anchorPane" stylesheets="@../../stylesheets/style.css">
+         <children>
+            <Label layoutX="35.0" layoutY="30.0" text="Test maseczki" textFill="WHITESMOKE">
+               <font>
+                  <Font name="Segoe UI Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="50.0" layoutY="79.0" prefHeight="114.0" prefWidth="412.0" text="W lepszych i wydajniejszych modelach zdmuchnięcie zapaliniczki przez maskę nie powinno być możliwe" textFill="WHITESMOKE" wrapText="true">
+               <font>
+                  <Font name="Segoe UI" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

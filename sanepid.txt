@@ -1,0 +1,16 @@
+Województwo Dolnośląskie; 50-950 Wrocław, ul. M.Skłodowskiej Curie 73/77; 71 328 30 41
+Województwo Lubelskie; 20-708 Lublin, ul.Pielęgniarek 6; 81 743 42 72
+Województwo Łódzkie; 90-046 Łódź, ul. Wodna 40; 42 253 62 00
+Województwo Mazowieckie; 00-875 Warszawa, ul. Żelazna 79; 22 620-90-01
+Województwo Podkarpackie; 35-959 Rzeszów, ul. Wierzbowa 16; 17 852 21 11
+Województwo Pomorskie; 80-211 Gdańsk, ul. Dębinki 4; 58 344 73 00
+Województwo Świętokrzyskie; 25-734 Kielce, ul. Jagiellońska 68; 41 365 54 00
+Województwo Wielkopolskie; 61-705 Poznań, ul. Noskowskiego 23; 61 854 48 00
+Województwo Kujawsko-Pomorskie; 85-031 Bydgoszcz, ul. Kujawska 4; 52 37 618 00
+Województwo Lubuskie; 66-400 Gorzów Wlkp., ul. Kazimierza Jagiellończyka 8B; 95 722 60 57
+Województwo Małopolskie; 31-202 Kraków, ul. Prądnicka 76; 12 25 49 555
+Województwo Opolskie; 45-367 Opole, ul. Mickiewicza 1; 77 442 69 00
+Województwo Podlaskie; 15-099 Białystok, ul. Legionowa 8; 85 740 85 40
+Województwo Śląskie; 40-074 Katowice, ul. Raciborska 39; 32 351 23 00
+Województwo Warmińsko-Mazurskie; 10-561 Olsztyn, ul. Żołnierska 16; 89 524 83 00
+Województwo Zachodniopomorskie; 70-632 Szczecin, ul. Spedytorska 6/7; 91 462 40 60
