@@ -13,16 +13,16 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.251" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.SecondStageController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" stylesheets="@../stylesheets/style.css" xmlns="http://javafx.com/javafx/8.0.251" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.SecondStageController">
     <children>
-        <AnchorPane layoutY="-52.0" prefHeight="170.0" prefWidth="1280.0" styleClass="anchorPane" stylesheets="@../../stylesheets/style.css">
+        <AnchorPane layoutY="-52.0" prefHeight="170.0" prefWidth="1280.0" styleClass="anchorPane" stylesheets="@../stylesheets/style.css">
             <children>
                 <Label layoutX="53.0" layoutY="85.0" text="Test objawów COVID-19" textFill="WHITESMOKE">
                     <font>
                         <Font name="Segoe UI Bold" size="48.0" />
                     </font>
                 </Label>
-                <Button fx:id="buttonBack" layoutX="1048.0" layoutY="89.0" mnemonicParsing="false" onAction="#backClicked" prefHeight="50.0" prefWidth="162.0" styleClass="buttonWhite" stylesheets="@../../stylesheets/style.css" text="wstecz">
+                <Button fx:id="buttonBack" layoutX="1048.0" layoutY="89.0" mnemonicParsing="false" onAction="#backClicked" prefHeight="50.0" prefWidth="162.0" styleClass="buttonWhite" stylesheets="@../stylesheets/style.css" text="wstecz">
                     <font>
                         <Font name="Segoe UI" size="25.0" />
                     </font>
@@ -57,22 +57,22 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <CheckBox fx:id="checkBox1" mnemonicParsing="false" prefHeight="38.0" prefWidth="22.0" styleClass="checkBox" stylesheets="@../../stylesheets/style.css">
+            <CheckBox fx:id="checkBox1" mnemonicParsing="false" prefHeight="38.0" prefWidth="22.0" styleClass="checkBox" stylesheets="@../stylesheets/style.css">
                <font>
                   <Font name="Segoe UI" size="28.0" />
                </font>
             </CheckBox>
-            <CheckBox fx:id="checkBox2" mnemonicParsing="false" stylesheets="@../../stylesheets/style.css" GridPane.rowIndex="1">
+            <CheckBox fx:id="checkBox2" mnemonicParsing="false" stylesheets="@../stylesheets/style.css" GridPane.rowIndex="1">
                <font>
                   <Font name="Segoe UI" size="28.0" />
                </font>
             </CheckBox>
-            <CheckBox fx:id="checkBox3" mnemonicParsing="false" stylesheets="@../../stylesheets/style.css" GridPane.rowIndex="2">
+            <CheckBox fx:id="checkBox3" mnemonicParsing="false" stylesheets="@../stylesheets/style.css" GridPane.rowIndex="2">
                <font>
                   <Font name="Segoe UI" size="28.0" />
                </font>
             </CheckBox>
-            <CheckBox fx:id="checkBox4" mnemonicParsing="false" stylesheets="@../../stylesheets/style.css" GridPane.rowIndex="3">
+            <CheckBox fx:id="checkBox4" mnemonicParsing="false" stylesheets="@../stylesheets/style.css" GridPane.rowIndex="3">
                <font>
                   <Font name="Segoe UI" size="28.0" />
                </font>
@@ -99,36 +99,36 @@
             </Label>
          </children>
       </GridPane>
-      <AnchorPane layoutX="824.0" layoutY="173.0" opacity="0.8" prefHeight="187.0" prefWidth="422.0" styleClass="anchorPane" stylesheets="@../../stylesheets/style.css">
+      <AnchorPane layoutX="824.0" layoutY="173.0" opacity="0.8" prefHeight="187.0" prefWidth="422.0" styleClass="anchorPane" stylesheets="@../stylesheets/style.css">
          <children>
             <Label layoutX="35.0" layoutY="30.0" text="Twój wynik to" textFill="WHITESMOKE">
                <font>
                   <Font name="Segoe UI Bold" size="30.0" />
                </font>
             </Label>
-            <Label fx:id="resultLabel" alignment="CENTER_RIGHT" layoutX="27.0" layoutY="73.0" prefHeight="86.0" prefWidth="83.0" stylesheets="@../../stylesheets/style.css" textFill="WHITESMOKE">
+            <Label fx:id="resultLabel" alignment="CENTER_RIGHT" layoutX="27.0" layoutY="73.0" prefHeight="86.0" prefWidth="83.0" stylesheets="@../stylesheets/style.css" textFill="WHITESMOKE">
                <font>
                   <Font name="Segoe UI" size="70.0" />
                </font>
             </Label>
-            <Label layoutX="111.0" layoutY="73.0" prefHeight="86.0" prefWidth="199.0" stylesheets="@../../stylesheets/style.css" text="/12" textFill="WHITESMOKE">
+            <Label layoutX="111.0" layoutY="73.0" prefHeight="86.0" prefWidth="199.0" stylesheets="@../stylesheets/style.css" text="/12" textFill="WHITESMOKE">
                <font>
                   <Font name="Segoe UI" size="70.0" />
                </font>
             </Label>
-            <Label layoutX="234.0" layoutY="109.0" prefHeight="38.0" prefWidth="110.0" stylesheets="@../../stylesheets/style.css" text="objawów" textFill="WHITESMOKE">
+            <Label layoutX="234.0" layoutY="109.0" prefHeight="38.0" prefWidth="110.0" stylesheets="@../stylesheets/style.css" text="objawów" textFill="WHITESMOKE">
                <font>
                   <Font name="Segoe UI" size="25.0" />
                </font>
             </Label>
          </children>
       </AnchorPane>
-      <Button fx:id="buttonNext" layoutX="438.0" layoutY="573.0" mnemonicParsing="false" onAction="#nextClicked" prefHeight="51.0" prefWidth="237.0" styleClass="mainButton" stylesheets="@../../stylesheets/style.css" text="dalej">
+      <Button fx:id="buttonNext" layoutX="438.0" layoutY="573.0" mnemonicParsing="false" onAction="#nextClicked" prefHeight="51.0" prefWidth="237.0" styleClass="mainButton" stylesheets="@../stylesheets/style.css" text="dalej">
          <font>
             <Font name="Segoe UI" size="24.0" />
          </font>
       </Button>
-      <AnchorPane layoutX="824.0" layoutY="385.0" opacity="0.8" prefHeight="302.0" prefWidth="422.0" styleClass="anchorPaneRed" stylesheets="@../../stylesheets/style.css">
+      <AnchorPane layoutX="824.0" layoutY="385.0" opacity="0.8" prefHeight="302.0" prefWidth="422.0" styleClass="anchorPaneRed" stylesheets="@../stylesheets/style.css">
          <children>
             <Label fx:id="adviceLabel" alignment="TOP_LEFT" layoutX="36.0" layoutY="74.0" prefHeight="216.0" prefWidth="358.0" text="Tu pojawią się wskazówki do dalszego postępowania, bazujące na Twoim wyniku" textFill="WHITESMOKE" wrapText="true">
                <font>

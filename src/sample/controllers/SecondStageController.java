@@ -50,7 +50,7 @@ public class SecondStageController {
 
     // powrot do poprzedniej sceny
     public void backClicked() throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("../view/Menu.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/resources/view/Menu.fxml"));
 
         Stage window = (Stage) buttonBack.getScene().getWindow();
         window.setScene(new Scene(root,1280, 720));

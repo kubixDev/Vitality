@@ -8,10 +8,12 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import sample.model.Quote;
+import sample.model.Station;
 import sample.tools.Tools;
 
 
 import java.io.IOException;
+import java.nio.file.Paths;
 import java.util.List;
 import java.util.Random;
 
@@ -27,12 +29,12 @@ public class WellStageController {
     Label personLabel;
 
     // wczytuje cytaty z pliku tekstowego
-    List<Quote> cytaty = Tools.getQuoteFromFile("cytaty.txt");
+    List<Quote> cytaty = Tools.getQuoteFromFile(Paths.get("src/resources/files/cytaty.txt"));
 
 
     // powrot do poprzedniej sceny
     public void backClicked() throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("../view/ThirdStage.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/resources/view/ThirdStage.fxml"));
 
         Stage window = (Stage) buttonBack.getScene().getWindow();
         window.setScene(new Scene(root,1280, 720));

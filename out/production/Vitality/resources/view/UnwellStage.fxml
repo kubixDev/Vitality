@@ -11,16 +11,16 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.251" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.UnwellStageController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" stylesheets="@../stylesheets/style.css" xmlns="http://javafx.com/javafx/8.0.251" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.UnwellStageController">
     <children>
-        <AnchorPane layoutY="-52.0" prefHeight="170.0" prefWidth="1280.0" styleClass="anchorPane" stylesheets="@../../stylesheets/style.css">
+        <AnchorPane layoutY="-52.0" prefHeight="170.0" prefWidth="1280.0" styleClass="anchorPane" stylesheets="@../stylesheets/style.css">
             <children>
                 <Label layoutX="53.0" layoutY="85.0" text="Przykro to słyszeć" textFill="WHITESMOKE">
                     <font>
                         <Font name="Segoe UI Bold" size="48.0" />
                     </font>
                 </Label>
-                <Button fx:id="buttonBack" layoutX="1048.0" layoutY="89.0" mnemonicParsing="false" onAction="#backClicked" prefHeight="50.0" prefWidth="162.0" styleClass="buttonWhite" stylesheets="@../../stylesheets/style.css" text="wstecz">
+                <Button fx:id="buttonBack" layoutX="1048.0" layoutY="89.0" mnemonicParsing="false" onAction="#backClicked" prefHeight="50.0" prefWidth="162.0" styleClass="buttonWhite" stylesheets="@../stylesheets/style.css" text="wstecz">
                     <font>
                         <Font name="Segoe UI" size="25.0" />
                     </font>
@@ -39,27 +39,27 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="otherHelp" mnemonicParsing="false" onAction="#otherHelpClicked" prefWidth="518.0" styleClass="mainButton" stylesheets="@../../stylesheets/style.css" text="inny problem" GridPane.rowIndex="4">
+            <Button fx:id="otherHelp" mnemonicParsing="false" onAction="#otherHelpClicked" prefWidth="518.0" styleClass="mainButton" stylesheets="@../stylesheets/style.css" text="inny problem" GridPane.rowIndex="4">
                <font>
                   <Font name="Segoe UI" size="25.0" />
                </font>
             </Button>
-            <Button fx:id="infectedButton" mnemonicParsing="false" onAction="#infectedClicked" prefWidth="518.0" styleClass="mainButton" stylesheets="@../../stylesheets/style.css" text="ja lub mój bliski został zarażony" GridPane.rowIndex="1">
+            <Button fx:id="infectedButton" mnemonicParsing="false" onAction="#infectedClicked" prefWidth="518.0" styleClass="mainButton" stylesheets="@../stylesheets/style.css" text="ja lub mój bliski został zarażony" GridPane.rowIndex="1">
                <font>
                   <Font name="Segoe UI" size="25.0" />
                </font>
             </Button>
-            <Button fx:id="productivityButton" mnemonicParsing="false" onAction="#productivityClicked" prefWidth="518.0" styleClass="mainButton" stylesheets="@../../stylesheets/style.css" text="jestem mniej produktywny" GridPane.rowIndex="2">
+            <Button fx:id="productivityButton" mnemonicParsing="false" onAction="#productivityClicked" prefWidth="518.0" styleClass="mainButton" stylesheets="@../stylesheets/style.css" text="jestem mniej produktywny" GridPane.rowIndex="2">
                <font>
                   <Font name="Segoe UI" size="25.0" />
                </font>
             </Button>
-            <Button fx:id="lonelyButton" mnemonicParsing="false" onAction="#lonelyClicked" prefWidth="518.0" styleClass="mainButton" stylesheets="@../../stylesheets/style.css" text="czuję się samotny" GridPane.rowIndex="3">
+            <Button fx:id="lonelyButton" mnemonicParsing="false" onAction="#lonelyClicked" prefWidth="518.0" styleClass="mainButton" stylesheets="@../stylesheets/style.css" text="czuję się samotny" GridPane.rowIndex="3">
                <font>
                   <Font name="Segoe UI" size="25.0" />
                </font>
             </Button>
-            <Button fx:id="anxiousButton" mnemonicParsing="false" onAction="#anxiousClicked" prefWidth="518.0" styleClass="mainButton" stylesheets="@../../stylesheets/style.css" text="przygnębia mnie obecna sytuacja pandemii">
+            <Button fx:id="anxiousButton" mnemonicParsing="false" onAction="#anxiousClicked" prefWidth="518.0" styleClass="mainButton" stylesheets="@../stylesheets/style.css" text="przygnębia mnie obecna sytuacja pandemii">
                <font>
                   <Font name="Segoe UI" size="25.0" />
                </font>
@@ -81,7 +81,7 @@
                 <Font name="Segoe UI Bold" size="35.0" />
             </font>
         </Label>
-      <AnchorPane layoutX="723.0" layoutY="173.0" opacity="0.8" prefHeight="322.0" prefWidth="526.0" styleClass="anchorPane" stylesheets="@../../stylesheets/style.css">
+      <AnchorPane layoutX="723.0" layoutY="173.0" opacity="0.8" prefHeight="322.0" prefWidth="526.0" styleClass="anchorPane" stylesheets="@../stylesheets/style.css">
          <children>
             <Label layoutX="35.0" layoutY="30.0" text="Jak sobie z tym poradzić?" textFill="WHITESMOKE">
                <font>
@@ -95,7 +95,7 @@
             </Label>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="723.0" layoutY="520.0" opacity="0.8" prefHeight="180.0" prefWidth="526.0" styleClass="anchorPaneRed" stylesheets="@../../stylesheets/style.css">
+      <AnchorPane layoutX="723.0" layoutY="520.0" opacity="0.8" prefHeight="180.0" prefWidth="526.0" styleClass="anchorPaneRed" stylesheets="@../stylesheets/style.css">
          <children>
             <Label layoutX="35.0" layoutY="30.0" text="Uwaga!" textFill="WHITESMOKE">
                <font>

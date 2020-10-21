@@ -12,16 +12,16 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.251" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.WellStageController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" stylesheets="@../stylesheets/style.css" xmlns="http://javafx.com/javafx/8.0.251" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.WellStageController">
     <children>
-        <AnchorPane layoutY="-52.0" prefHeight="170.0" prefWidth="1280.0" styleClass="anchorPane" stylesheets="@../../stylesheets/style.css">
+        <AnchorPane layoutY="-52.0" prefHeight="170.0" prefWidth="1280.0" styleClass="anchorPane" stylesheets="@../stylesheets/style.css">
             <children>
                 <Label layoutX="53.0" layoutY="85.0" text="Cieszę się!" textFill="WHITESMOKE">
                     <font>
                         <Font name="Segoe UI Bold" size="48.0" />
                     </font>
                 </Label>
-                <Button fx:id="buttonBack" layoutX="1048.0" layoutY="89.0" mnemonicParsing="false" onAction="#backClicked" prefHeight="50.0" prefWidth="162.0" styleClass="buttonWhite" stylesheets="@../../stylesheets/style.css" text="wstecz">
+                <Button fx:id="buttonBack" layoutX="1048.0" layoutY="89.0" mnemonicParsing="false" onAction="#backClicked" prefHeight="50.0" prefWidth="162.0" styleClass="buttonWhite" stylesheets="@../stylesheets/style.css" text="wstecz">
                     <font>
                         <Font name="Segoe UI" size="25.0" />
                     </font>
@@ -88,9 +88,9 @@
             <Circle fill="#12cc91" radius="7.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.5" GridPane.rowIndex="4" />
          </children>
       </GridPane>
-      <AnchorPane layoutX="723.0" layoutY="173.0" opacity="0.8" prefHeight="490.0" prefWidth="519.0" styleClass="anchorPane" stylesheets="@../../stylesheets/style.css">
+      <AnchorPane layoutX="723.0" layoutY="173.0" opacity="0.8" prefHeight="490.0" prefWidth="519.0" styleClass="anchorPane" stylesheets="@../stylesheets/style.css">
          <children>
-            <Button fx:id="buttonNextQuote" layoutX="26.0" layoutY="423.0" mnemonicParsing="false" onAction="#quoteClicked" prefWidth="39.0" styleClass="buttonWhite" stylesheets="@../../stylesheets/style.css" text="&gt;">
+            <Button fx:id="buttonNextQuote" layoutX="26.0" layoutY="423.0" mnemonicParsing="false" onAction="#quoteClicked" prefWidth="39.0" styleClass="buttonWhite" stylesheets="@../stylesheets/style.css" text="&gt;">
                <font>
                   <Font name="Segoe UI Bold" size="22.0" />
                </font>

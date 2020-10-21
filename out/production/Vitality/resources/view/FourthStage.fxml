@@ -17,16 +17,16 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.251" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.FourthStageController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" stylesheets="@../stylesheets/style.css" xmlns="http://javafx.com/javafx/8.0.251" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.FourthStageController">
     <children>
-        <AnchorPane layoutY="-52.0" prefHeight="170.0" prefWidth="1280.0" styleClass="anchorPane" stylesheets="@../../stylesheets/style.css">
+        <AnchorPane layoutY="-52.0" prefHeight="170.0" prefWidth="1280.0" styleClass="anchorPane" stylesheets="@../stylesheets/style.css">
             <children>
                 <Label layoutX="53.0" layoutY="85.0" text="Dane statystyczne zakażeń" textFill="WHITESMOKE">
                     <font>
                         <Font name="Segoe UI Bold" size="48.0" />
                     </font>
                 </Label>
-                <Button fx:id="buttonBack" layoutX="1048.0" layoutY="89.0" mnemonicParsing="false" onAction="#backClicked" prefHeight="50.0" prefWidth="162.0" styleClass="buttonWhite" stylesheets="@../../stylesheets/style.css" text="wstecz">
+                <Button fx:id="buttonBack" layoutX="1048.0" layoutY="89.0" mnemonicParsing="false" onAction="#backClicked" prefHeight="50.0" prefWidth="162.0" styleClass="buttonWhite" stylesheets="@../stylesheets/style.css" text="wstecz">
                     <font>
                         <Font name="Segoe UI" size="25.0" />
                     </font>
@@ -56,7 +56,7 @@
                 <Font name="Segoe UI Bold" size="35.0" />
             </font>
         </Label>
-      <RadioButton fx:id="radioButtonPolska" layoutX="63.0" layoutY="260.0" mnemonicParsing="false" onAction="#polskaChecked" prefHeight="34.0" prefWidth="174.0" styleClass="radioButton" stylesheets="@../../stylesheets/style.css" text="Polska">
+      <RadioButton fx:id="radioButtonPolska" layoutX="63.0" layoutY="260.0" mnemonicParsing="false" onAction="#polskaChecked" prefHeight="34.0" prefWidth="174.0" styleClass="radioButton" stylesheets="@../stylesheets/style.css" text="Polska">
          <font>
             <Font name="Segoe UI" size="22.0" />
          </font>
@@ -64,13 +64,13 @@
             <ToggleGroup fx:id="region" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton fx:id="radioButtonSwiat" layoutX="204.0" layoutY="262.0" mnemonicParsing="false" onAction="#swiatChecked" prefHeight="34.0" prefWidth="131.0" styleClass="radioButton" stylesheets="@../../stylesheets/style.css" text="Świat" toggleGroup="$region">
+      <RadioButton fx:id="radioButtonSwiat" layoutX="204.0" layoutY="262.0" mnemonicParsing="false" onAction="#swiatChecked" prefHeight="34.0" prefWidth="131.0" styleClass="radioButton" stylesheets="@../stylesheets/style.css" text="Świat" toggleGroup="$region">
          <font>
             <Font name="Segoe UI" size="22.0" />
          </font>
       </RadioButton>
       <Line endX="326.5999755859375" endY="-335.6000061035156" fill="BLACK" layoutX="-263.0" layoutY="683.0" startX="620.0" startY="-335.6000061035156" stroke="#11998e" strokeLineCap="ROUND" strokeWidth="2.0" />
-      <AnchorPane layoutX="777.0" layoutY="163.0" opacity="0.8" prefHeight="516.0" prefWidth="431.0" styleClass="anchorPane" stylesheets="@../../stylesheets/style.css">
+      <AnchorPane layoutX="777.0" layoutY="163.0" opacity="0.8" prefHeight="516.0" prefWidth="431.0" styleClass="anchorPane" stylesheets="@../stylesheets/style.css">
          <children>
             <GridPane layoutX="46.0" layoutY="32.0" prefHeight="452.0" prefWidth="305.0">
               <columnConstraints>

@@ -11,7 +11,8 @@ import javafx.stage.Stage;
 import sample.model.Station;
 import sample.tools.Tools;
 
-import java.io.IOException;
+import java.io.*;
+import java.nio.file.Paths;
 import java.util.List;
 
 
@@ -31,12 +32,12 @@ public class FirstStageController {
 
     // wczytuje stacje sanepid z pliku
     // zrodlo danych: http://wsse.szczecin.pl/lista-stacji-wojewodzkich/
-    List<Station> stacjeSanepid = Tools.getStationsFromFile("sanepid.txt");
+    List<Station> stacjeSanepid = Tools.getStationsFromFile(Paths.get("src/resources/files/sanepid.txt"));
 
 
     // powrot do poprzedniej sceny
     public void backClicked() throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("../view/Menu.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/resources/view/Menu.fxml"));
 
         Stage window = (Stage) buttonBack.getScene().getWindow();
         window.setScene(new Scene(root,1280, 720));

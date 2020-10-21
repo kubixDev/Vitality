@@ -8,9 +8,11 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import sample.model.MentalHelp;
+import sample.model.Station;
 import sample.tools.Tools;
 
 import java.io.IOException;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,12 +35,12 @@ public class UnwellStageController {
 
 
     // wczytuje pomoc z pliku tekstowego
-    List<MentalHelp> mentalHelpList = Tools.getHelpFromFile("wsparcieEmocjonalne.txt");
+    List<MentalHelp> mentalHelpList = Tools.getHelpFromFile(Paths.get("src/resources/files/wsparcieEmocjonalne.txt"));
 
 
     // powrot do poprzedniej sceny
     public void backClicked() throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("../view/ThirdStage.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/resources/view/ThirdStage.fxml"));
 
         Stage window = (Stage) buttonBack.getScene().getWindow();
         window.setScene(new Scene(root,1280, 720));

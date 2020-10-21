@@ -10,10 +10,12 @@ import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
+import sample.model.Quote;
 import sample.model.Statistics;
 import sample.tools.Tools;
 
 import java.io.IOException;
+import java.nio.file.Paths;
 import java.util.List;
 
 public class FourthStageController {
@@ -51,7 +53,7 @@ public class FourthStageController {
 
     // ustalenie listy statystyk
     // zrodlo danych: https://www.medicover.pl/koronawirus/statystyki/
-    List<Statistics> statistics = Tools.getStatisticsFromFile("zarazeniaMiesiecznie.txt");
+    List<Statistics> statistics = Tools.getStatisticsFromFile(Paths.get("src/resources/files/zarazeniaMiesiecznie.txt"));
 
 
 
@@ -65,7 +67,7 @@ public class FourthStageController {
 
     // powrot do poprzedniej sceny
     public void backClicked() throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("../view/Menu.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/resources/view/Menu.fxml"));
 
         Stage window = (Stage) buttonBack.getScene().getWindow();
         window.setScene(new Scene(root,1280, 720));

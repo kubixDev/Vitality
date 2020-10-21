@@ -22,7 +22,7 @@ public class MenuController {
 
     // przycisk przechodzacy do centrum informacji (FirstStage)
     public void OneClicked() throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("../view/FirstStage.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/resources/view/FirstStage.fxml"));
 
         Stage window = (Stage) button1.getScene().getWindow();
         window.setScene(new Scene(root,1280, 720));
@@ -31,7 +31,7 @@ public class MenuController {
 
     // przycisk przechodzacy do testu na objwy covid (SecondStage)
     public void TwoClicked() throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("../view/SecondStage.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/resources/view/SecondStage.fxml"));
 
         Stage window = (Stage) button1.getScene().getWindow();
         window.setScene(new Scene(root,1280, 720));
@@ -40,7 +40,7 @@ public class MenuController {
 
     // przycisk przechodzacy do wsparcia emocjonalnego (ThirdStage)
     public void ThreeClicked() throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("../view/ThirdStage.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/resources/view/ThirdStage.fxml"));
 
             Stage window = (Stage) button1.getScene().getWindow();
             window.setScene(new Scene(root,1280, 720));
@@ -49,7 +49,7 @@ public class MenuController {
 
     // przycisk przechodzacy do statystyk (FourthStage)
     public void FourClicked() throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("../view/FourthStage.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/resources/view/FourthStage.fxml"));
 
         Stage window = (Stage) button1.getScene().getWindow();
         window.setScene(new Scene(root,1280, 720));

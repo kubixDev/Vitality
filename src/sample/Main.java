@@ -12,7 +12,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("view/Menu.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/resources/view/Menu.fxml"));
         primaryStage.setTitle("Vitality");
         primaryStage.setScene(new Scene(root, 1280, 720));
         primaryStage.show();
@@ -24,7 +24,7 @@ public class Main extends Application {
         primaryStage.sizeToScene();
 
         // ustawia logo aplikacji
-        primaryStage.getIcons().add(new Image("images/VitalityIcon.png"));
+        primaryStage.getIcons().add(new Image("/resources/images/VitalityIcon.png"));
     }
 
 

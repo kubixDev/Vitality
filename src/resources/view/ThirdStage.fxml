@@ -9,16 +9,16 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.251" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.ThirdStageController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" stylesheets="@../stylesheets/style.css" xmlns="http://javafx.com/javafx/8.0.251" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.ThirdStageController">
     <children>
-        <AnchorPane layoutY="-52.0" prefHeight="170.0" prefWidth="1280.0" styleClass="anchorPane" stylesheets="@../../stylesheets/style.css">
+        <AnchorPane layoutY="-52.0" prefHeight="170.0" prefWidth="1280.0" styleClass="anchorPane" stylesheets="@../stylesheets/style.css">
             <children>
                 <Label layoutX="53.0" layoutY="85.0" text="Wsparcie emocjonalne" textFill="WHITESMOKE">
                     <font>
                         <Font name="Segoe UI Bold" size="48.0" />
                     </font>
                 </Label>
-                <Button fx:id="buttonBack" layoutX="1048.0" layoutY="89.0" mnemonicParsing="false" onAction="#backClicked" prefHeight="50.0" prefWidth="162.0" styleClass="buttonWhite" stylesheets="@../../stylesheets/style.css" text="wstecz">
+                <Button fx:id="buttonBack" layoutX="1048.0" layoutY="89.0" mnemonicParsing="false" onAction="#backClicked" prefHeight="50.0" prefWidth="162.0" styleClass="buttonWhite" stylesheets="@../stylesheets/style.css" text="wstecz">
                     <font>
                         <Font name="Segoe UI" size="25.0" />
                     </font>
@@ -41,12 +41,12 @@
             </font>
         </Label>
         <Line endX="341.99993896484375" fill="BLACK" layoutX="473.0" layoutY="328.0" startX="25.73333740234375" stroke="#11998e" strokeLineCap="ROUND" strokeWidth="2.0" />
-      <Button fx:id="buttonWell" layoutX="440.0" layoutY="360.0" mnemonicParsing="false" onAction="#wellClicked" prefHeight="200.0" prefWidth="200.0" styleClass="mainButton" stylesheets="@../../stylesheets/style.css" text="Szczęśliwie">
+      <Button fx:id="buttonWell" layoutX="440.0" layoutY="360.0" mnemonicParsing="false" onAction="#wellClicked" prefHeight="200.0" prefWidth="200.0" styleClass="mainButton" stylesheets="@../stylesheets/style.css" text="Szczęśliwie">
          <font>
             <Font name="Segoe UI" size="30.0" />
          </font>
       </Button>
-      <Button fx:id="buttonUnwell" layoutX="662.0" layoutY="360.0" mnemonicParsing="false" onAction="#unwellClicked" prefHeight="200.0" prefWidth="200.0" styleClass="mainButton" stylesheets="@../../stylesheets/style.css" text="Przykro">
+      <Button fx:id="buttonUnwell" layoutX="662.0" layoutY="360.0" mnemonicParsing="false" onAction="#unwellClicked" prefHeight="200.0" prefWidth="200.0" styleClass="mainButton" stylesheets="@../stylesheets/style.css" text="Przykro">
          <font>
             <Font name="Segoe UI" size="30.0" />
          </font>
