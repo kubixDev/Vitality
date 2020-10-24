@@ -1,8 +1,6 @@
 package sample.model;
 
 public class Statistics {
-    // klasa stworzona na potrzeby wczytywania statystyk koronawirusa
-
     String region;
     String styczenPrzypadki;
     String lutyPrzypadki;

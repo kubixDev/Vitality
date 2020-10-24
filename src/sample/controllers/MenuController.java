@@ -20,7 +20,6 @@ public class MenuController {
     Button button4;
 
 
-    // przycisk przechodzacy do centrum informacji (FirstStage)
     public void OneClicked() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/resources/view/FirstStage.fxml"));
 
@@ -29,7 +28,6 @@ public class MenuController {
     }
 
 
-    // przycisk przechodzacy do testu na objwy covid (SecondStage)
     public void TwoClicked() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/resources/view/SecondStage.fxml"));
 
@@ -38,7 +36,6 @@ public class MenuController {
     }
 
 
-    // przycisk przechodzacy do wsparcia emocjonalnego (ThirdStage)
     public void ThreeClicked() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/resources/view/ThirdStage.fxml"));
 
@@ -47,7 +44,6 @@ public class MenuController {
     }
 
 
-    // przycisk przechodzacy do statystyk (FourthStage)
     public void FourClicked() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/resources/view/FourthStage.fxml"));
 

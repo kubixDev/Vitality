@@ -13,30 +13,26 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Tools {
-
-    // odpowiada za wczytanie listy stacji z pliku
     public static List<Station> getStationsFromFile(Path fileName) {
         List<Station> result = new ArrayList<>();
 
         try {
             List<String> lista = Files.readAllLines(fileName);
-            for (String element: lista                                                     // element to pojedynczy wiersz z pliku
+            for (String element: lista
                  ) {
-                String[] tablica = element.split(";");                               // elementy podzielone sa srednikami
-                Station station = new Station(tablica[0], tablica[1], tablica[2]);         // np tablica[0] - wojewodztwo, tablica[1] - adres itd
+                String[] tablica = element.split(";");
+                Station station = new Station(tablica[0], tablica[1], tablica[2]);
                 result.add(station);
             }
 
-        // wyjatek gdyby nie bylo pliku
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        // zwraca liste obiektu Station zawierajaca dane z wprowadzonego pliku
         return result;
     }
 
-    // odpowiada za wczytanie cytatow z pliku
+
     public static List<Quote> getQuoteFromFile(Path fileName) {
         List<Quote> result = new ArrayList<>();
 
@@ -49,16 +45,14 @@ public class Tools {
                 result.add(quote);
             }
 
-        // wyjatek gdyby nie bylo pliku
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        // zwraca liste obiektu Quote zawierajaca dane z wprowadzonego pliku
         return result;
     }
 
-    // odpowiada za wczytanie pomocy z pliku
+
     public static List<MentalHelp> getHelpFromFile(Path fileName) {
         List<MentalHelp> result = new ArrayList<>();
 
@@ -71,16 +65,14 @@ public class Tools {
                 result.add(mentalHelp);
             }
 
-        // wyjatek gdyby nie bylo pliku
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        // zwraca liste obiektu MentalHelp zawierajaca dane z wprowadzonego pliku
         return result;
     }
 
-    // odpowiada za wczytanie statystyk z pliku
+
     public static List<Statistics> getStatisticsFromFile(Path fileName) {
         List<Statistics> result = new ArrayList<>();
 
@@ -93,12 +85,10 @@ public class Tools {
                 result.add(statistics);
             }
 
-            // wyjatek gdyby nie bylo pliku
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        // zwraca liste obiektu Statistics zawierajaca dane z wprowadzonego pliku
         return result;
     }
 }

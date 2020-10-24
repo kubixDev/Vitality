@@ -17,7 +17,6 @@ public class ThirdStageController {
     Button buttonUnwell;
 
 
-    // powrot do poprzedniej sceny
     public void backClicked() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/resources/view/Menu.fxml"));
 
@@ -26,7 +25,6 @@ public class ThirdStageController {
     }
 
 
-    // przejscie do sceny dobrego samopoczucia
     public void wellClicked() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/resources/view/WellStage.fxml"));
 
@@ -35,7 +33,6 @@ public class ThirdStageController {
     }
 
 
-    // przejscie do sceny zlego samopoczucia
     public void unwellClicked() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/resources/view/UnwellStage.fxml"));
 

@@ -34,11 +34,9 @@ public class UnwellStageController {
     Label helpLabel;
 
 
-    // wczytuje pomoc z pliku tekstowego
-    List<MentalHelp> mentalHelpList = Tools.getHelpFromFile(Paths.get("src/resources/files/wsparcieEmocjonalne.txt"));
+    List<MentalHelp> mentalHelpList = Tools.getHelpFromFile(Paths.get("src/resources/files/emotionalSupport.txt"));
 
 
-    // powrot do poprzedniej sceny
     public void backClicked() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/resources/view/ThirdStage.fxml"));
 
@@ -47,7 +45,6 @@ public class UnwellStageController {
     }
 
 
-    // przyciski z powszechnymi problemami
     public void anxiousClicked() {
         for (MentalHelp help: mentalHelpList
              ) {

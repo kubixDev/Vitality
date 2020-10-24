@@ -28,11 +28,10 @@ public class WellStageController {
     @FXML
     Label personLabel;
 
-    // wczytuje cytaty z pliku tekstowego
-    List<Quote> cytaty = Tools.getQuoteFromFile(Paths.get("src/resources/files/cytaty.txt"));
+
+    List<Quote> cytaty = Tools.getQuoteFromFile(Paths.get("src/resources/files/quotes.txt"));
 
 
-    // powrot do poprzedniej sceny
     public void backClicked() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/resources/view/ThirdStage.fxml"));
 
@@ -41,8 +40,6 @@ public class WellStageController {
     }
 
 
-    // po nacisnieciu przucisku losuje cytat
-    // zrodlo cytatow: Forbes, Wikiquotes (tlumaczone)
     public void quoteClicked() {
         Random random = new Random();
         Quote randomQuote = cytaty.get(random.nextInt(cytaty.size()));

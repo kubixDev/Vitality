@@ -8,7 +8,6 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 public class Main extends Application {
-    // todo spakowac gotowy exe z plikami do zip
 
     @Override
     public void start(Stage primaryStage) throws Exception{
@@ -17,16 +16,12 @@ public class Main extends Application {
         primaryStage.setScene(new Scene(root, 1280, 720));
         primaryStage.show();
 
-        // blokowanie resize, ustawienie sceny eliminuje bug
-        // https://bugs.openjdk.java.net/browse/JDK-8090028
         primaryStage.setScene(primaryStage.getScene());
         primaryStage.setResizable(false);
         primaryStage.sizeToScene();
 
-        // ustawia logo aplikacji
         primaryStage.getIcons().add(new Image("/resources/images/VitalityIcon.png"));
     }
-
 
     public static void main(String[] args) {
         launch(args);

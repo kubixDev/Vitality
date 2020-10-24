@@ -1,8 +1,6 @@
 package sample.model;
 
 public class MentalHelp {
-    // klasa stworzona na potrzeby wczytywania tekstu pomocy
-
     String type;
     String contents;
 

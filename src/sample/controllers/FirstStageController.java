@@ -29,13 +29,10 @@ public class FirstStageController {
     @FXML
     Label mainPhoneNumber;
 
-
-    // wczytuje stacje sanepid z pliku
     // zrodlo danych: http://wsse.szczecin.pl/lista-stacji-wojewodzkich/
     List<Station> stacjeSanepid = Tools.getStationsFromFile(Paths.get("src/resources/files/sanepid.txt"));
 
 
-    // powrot do poprzedniej sceny
     public void backClicked() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/resources/view/Menu.fxml"));
 
@@ -44,23 +41,22 @@ public class FirstStageController {
     }
 
 
-    // przycisk do wyszukania wojewodztwa
     public void findClicked() {
-
-        // domyslne ustawia wartosci pól na puste
         mainInstitution.setText("");
         mainPhoneNumber.setText("");
 
-        // jezeli pole nie jest puste, to moze zadzialac for
         if (!textField.getText().equals("")) {
-
-            // for dla kazdej linijki listy, po wojewodztwie, wpisuje odpowiadajace mu dane
             for (Station stacja: stacjeSanepid
             ) {
-                if (stacja.getWojewodztwo().toLowerCase().contains(textField.getText().toLowerCase())) {    // zamienia na male litery zeby nie bylo problemu w szukaniu
+                if (stacja.getWojewodztwo().toLowerCase().contains(textField.getText().toLowerCase())) {
                     mainInstitution.setText(stacja.getAdres());
                     mainPhoneNumber.setText(stacja.getTelefon());
                     break;
+                }
+
+                else {
+                    mainInstitution.setText("brak danych");
+                    mainPhoneNumber.setText("brak danych");
                 }
             }
         }

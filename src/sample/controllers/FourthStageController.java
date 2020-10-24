@@ -51,21 +51,16 @@ public class FourthStageController {
     @FXML
     private NumberAxis y;
 
-    // ustalenie listy statystyk
     // zrodlo danych: https://www.medicover.pl/koronawirus/statystyki/
-    List<Statistics> statistics = Tools.getStatisticsFromFile(Paths.get("src/resources/files/zarazeniaMiesiecznie.txt"));
+    List<Statistics> statistics = Tools.getStatisticsFromFile(Paths.get("src/resources/files/monthlyCases.txt"));
 
 
-
-    // metoda uruchamia sie na starcie, ustawia domyslny radiobutton i blokuje zbedne animacje
     public void initialize() {
         radioButtonPolska.fire();
         barChart.setAnimated(false);
     }
 
 
-
-    // powrot do poprzedniej sceny
     public void backClicked() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/resources/view/Menu.fxml"));
 
@@ -74,8 +69,6 @@ public class FourthStageController {
     }
 
 
-
-    // ustawia labele z iloscia przypadkow
     public void setLabels(String region) {
         for (Statistics stats: statistics
         ) {
@@ -94,15 +87,11 @@ public class FourthStageController {
     }
 
 
-
-    // metoda resetuje barChart, aby wykresy sie nie nalozyly
     public void resetChart() {
         barChart.getData().clear();
     }
 
 
-
-    // metoda tworzy serie dla wprowadzonej nazwy i numeru danych
     public void createSeries(String chartName, int numerDanych) {
         XYChart.Series series = new XYChart.Series<>();
         series.setName(chartName);
@@ -119,8 +108,6 @@ public class FourthStageController {
     }
 
 
-
-    // ustawia konkretna serie w barChart w zaleznosci od wybranego radioButtona
     public void setSeries() {
         resetChart();
 
@@ -133,13 +120,12 @@ public class FourthStageController {
     }
 
 
-
-    // radiobutton zmienia dane regionu na Polske
     public void polskaChecked() {
         setLabels("Polska");
         setSeries();
     }
-    // radiobutton zmienia dane regionu na swiat
+
+
     public void swiatChecked() {
         setLabels("Świat");
         setSeries();

@@ -1,9 +1,6 @@
 package sample.model;
 
 public class Station {
-    // klasa stworzona na potrzeby danych o sanepidzie, przechowuje stringi danych o wojewodztwie, adresie i telefonie
-    // constructor, gettery i settery, toString
-
     String wojewodztwo;
     String adres;
     String telefon;

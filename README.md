@@ -1,4 +1,4 @@
-<img src="https://i.imgur.com/Nr3F5hM.png" alt="vitalityLogo" width="500"/>
+<img src="https://i.imgur.com/Nr3F5hM.png" alt="vitalityLogo" width="400"/>
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-java.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
@@ -28,11 +28,18 @@ Projekt wykorzystuje technologie:
 
 ## Uruchamianie
 
-work in progress
+* do poprawnego działania aplikacji potrzebna jest Java, **minimum w wersji 8**
+* stabilna, gotowa do pobrania wersja Vitality znajduje się w **"releases"**
+* katalog src musi znajdować się w tej samej lokalizacji co Vitality.jar
+* jeżeli aplikacja nie uruchamia się poprzez dwukrotne naciśnięcie, należy wykonać polecenie **java -jar Vitality.jar** w katalogu z aplikacją
 
 ## Licencja
 **Aplikacja Vitality jest rozpowszechniana pod licencją:** Creative Commons Uznanie autorstwa - Użycie niekomercyjne - Bez Utworów Zależnych 4.0 Międzynarodowa Licencja Publiczna
 
 ## Podgląd aplikacji
 
-work in progress
+<img src="https://i.imgur.com/AhWG9PD.png" alt="panelGlowny" width="600"/>
+
+<img src="https://i.imgur.com/6C7xK90.png" alt="centrumInformacji" width="600"/>
+
+<img src="https://i.imgur.com/f4iNYzv.png" alt="testObjawow" width="600"/>

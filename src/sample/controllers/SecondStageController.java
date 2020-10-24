@@ -42,13 +42,10 @@ public class SecondStageController {
     CheckBox checkBox4;
 
 
-    // ustawia wartosci licznikow
     int licznikObjawow = 0;
     int licznikTury = 0;
 
 
-
-    // powrot do poprzedniej sceny
     public void backClicked() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/resources/view/Menu.fxml"));
 
@@ -57,15 +54,11 @@ public class SecondStageController {
     }
 
 
-
-    // uruchamia sie na start - klika guzik aby zaczac od 1 tury pytan
     public void initialize() {
         buttonNext.fire();
     }
 
 
-
-    // osobne funkcje ustawiajace tekst pytan
     public void questionsFirstCase() {
         questionLabel1.setText("wystąpiła u mnie temp. powyżej 38 C");
         questionLabel2.setText("odczuwam duszności");
@@ -92,8 +85,6 @@ public class SecondStageController {
     }
 
 
-
-    // ustawia pytania bazujac na wprowadzonym liczniku tury
     public void setQuestion(int tura) {
         switch (tura) {
             case 1: {
@@ -116,8 +107,6 @@ public class SecondStageController {
     }
 
 
-
-    // resetuje zaznaczone checkboxy
     public void resetSelected() {
         checkBox1.setSelected(false);
         checkBox2.setSelected(false);
@@ -126,8 +115,6 @@ public class SecondStageController {
     }
 
 
-
-    // liczy zaznaczone checkboxy
     public void countSelected() {
         if (checkBox1.isSelected()) {
             licznikObjawow++;
@@ -144,8 +131,6 @@ public class SecondStageController {
     }
 
 
-
-    // ustawia porade bazujac na wprowadzonej ilosci objawow
     public String setAdvice(int symptomCount) {
         if (symptomCount <= 2) {
             return "Nie występuje u Ciebie wiele objawów, istnieje niewielka szansa na obecność koronawirusa. Stosuj się do zasad reżimu sanitarnego, nie zapominając o środkach ostrożności. W razie złego samopoczucia koniecznie zgłoś się do lekarza";
@@ -158,29 +143,28 @@ public class SecondStageController {
     }
 
 
-
-    // sprawdza wyjatkowe przypadki licznika tury
     public void checkLicznikTury() {
         if (licznikTury == 3) {
             buttonNext.setText("wynik");
         }
         if (licznikTury == 4) {
-            checkBox1.setDisable(true);
-            checkBox2.setDisable(true);
-            checkBox3.setDisable(true);
-            checkBox4.setDisable(true);
+            checkBox1.setVisible(false);
+            checkBox2.setVisible(false);
+            checkBox3.setVisible(false);
+            checkBox4.setVisible(false);
             buttonNext.setDisable(true);
 
-            resultLabel.setText(String.valueOf(licznikObjawow));
             adviceLabel.setText(setAdvice(licznikObjawow));
             infoLabel.setText("Sprawdź wynik po prawej stronie");
 
         }
     }
 
+    public void setLicznikObjawow() {
+        resultLabel.setText(String.valueOf(licznikObjawow));
+    }
 
 
-    // glowny przycisk nawigacji po tescie
     public void nextClicked() {
         licznikTury++;
 
@@ -189,6 +173,8 @@ public class SecondStageController {
         resetSelected();
 
         checkLicznikTury();
+
+        setLicznikObjawow();
 
         setQuestion(licznikTury);
     }

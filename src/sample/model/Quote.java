@@ -1,8 +1,6 @@
 package sample.model;
 
 public class Quote {
-    // klasa stworzona na potrzeby wczytywania cytatow motywacyjnych
-
     String osoba;
     String cytat;
 
